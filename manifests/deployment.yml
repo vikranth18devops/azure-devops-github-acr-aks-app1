@@ -13,7 +13,7 @@ spec:
         app: app1nginxaks 
     spec:
       containers:
-        - name: app1nginxaks 
-          image: aksdevopsacr18.azurecr.io/app1nginxaks
+        - name: vikranthapp123 
+          image: aksdevopsacrv.azurecr.io/vikranthapp123
           ports:
           - containerPort: 80
