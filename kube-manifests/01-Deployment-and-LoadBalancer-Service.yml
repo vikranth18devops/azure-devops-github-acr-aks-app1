@@ -1,35 +1,35 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app1-nginx-deployment
+  name: vikranthimage1 -deployment
   labels:
-    app: app1-nginx
+    app: vikranthimage1 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: app1-nginx
+      app: vikranthimage1 
   template:
     metadata:
       labels:
-        app: app1-nginx
+        app: vikranthimage1 
     spec:
       containers:
-        - name: vikranthapp123
-          image: aksdevopsacrv.azurecr.io/vikranthapp123
+        - name: vikranthimage1
+          image: aksdevopsacr18.azurecr.io/vikranthimage1
           ports:
             - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: app1-nginx-loadbalancer-service
+  name: vikranthimage1-loadbalancer-service
   labels:
-    app: app1-nginx
+    app: vikranthimage1
 spec:
   type: LoadBalancer
   selector:
-    app: app1-nginx
+    app: vikranthimage1
   ports:
     - port: 80
       targetPort: 80
