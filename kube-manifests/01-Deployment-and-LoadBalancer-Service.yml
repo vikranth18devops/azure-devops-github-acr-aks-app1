@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vikranthimage1 -deployment
+  name: vikranthimage1-deployment
   labels:
     app: vikranthimage1 
 spec:
